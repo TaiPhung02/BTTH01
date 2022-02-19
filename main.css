@@ -25,15 +25,14 @@ padding: 0;
     height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d; 
-}
-
+} 
 .card-front, .card-back{
     position: absolute;
     width: 100%;
     height: 100%;
     background-position: center;
     background-size: cover;
-    padding: 55px;
+    padding: 50px;
     box-sizing: border-box;
     backface-visibility: hidden;
 }

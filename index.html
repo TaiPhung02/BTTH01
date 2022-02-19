@@ -12,7 +12,7 @@
         <div class="card" style="background-image:url('./images/anhnen.jpg')">
             <div class="card-layout">
             <div class="inner-box" id="card">
-                <div class="card-front">
+                <div class="card-front" id="card-front">
                     <h2>LOGIN</h2>
                     <form>
                         <input type="text" class="input-box" placeholder="Your Email Id" required>
@@ -23,7 +23,7 @@
                     <button type="button" class="btn" onclick="openRegister()">I'm new here</button>
                     <a href="">Forgot Password</a>
                 </div>
-                <div class="card-back">
+                <div class="card-back"  id="card-back">
                     <h2>REGISTER</h2>
                     <form>
                         <input type="text" class="input-box" placeholder="Your Name" required>
@@ -50,9 +50,13 @@
         var card = document.getElementById("card");
         function openRegister() {
             card.style.transform ="rotateY(-180deg)";
+            document.getElementById("card-front").style.display = "none";
+            document.getElementById("card-back").style.display = "block";
         }
         function openLogin() {
             card.style.transform ="rotateY(0deg)";
+            document.getElementById("card-back").style.display = "none";
+            document.getElementById("card-front").style.display = "block";
         }
     </script>
     
